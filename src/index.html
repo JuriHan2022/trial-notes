@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.scss" />
+    <script defer src="./note.js"></script>
+    <title>Note Taker Application</title>
+  </head>
+  <body>
+    <div class="modal-container">
+      <div class="modal">
+        <button class="modal__btn">&times;</button>
+        <h2 class="modal__title">Juri Han's Weekly Reading Notes</h2>
+        <p class="modal__body">
+          <a href="../../hanJuri_2022/index.html"
+            >your work share from last week</a
+          >
+          a new post this week: What are some things to consider while
+          reading:<br />
+          WHO wrote the article?<br />
+          WHEN was this article written<br />
+          WHAT is interesting about the article? <br />WHY is it interesting to
+          you?<br />
+          HOW can you apply this/intruprit this into your own practice?
+          <br />WHERE should this article be used?
+        </p>
+      </div>
+    </div>
+    <div class="form-container">
+      <h1>Note Taker</h1>
+      <h3>Add a New Note:</h3>
+      <form>
+        <label for="title"
+          >Title
+          <input type="text" id="title" placeholder="Enter a note title." />
+        </label>
+        <label for="note"
+          >Note
+          <textarea
+            type="text"
+            id="note"
+            cols="30"
+            rows="10"
+            placeholder="Enter note text."
+          ></textarea>
+        </label>
+        <input type="submit" />
+      </form>
+    </div>
+    <div class="note-container"></div>
+  </body>
+</html>
